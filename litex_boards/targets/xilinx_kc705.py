@@ -40,7 +40,7 @@ class _CRG(LiteXModule):
 
         # # #
 
-        self.pll = pll = S7MMCM(speedgrade=-2)
+        self.pll = pll = S7PLL(speedgrade=-2)
         self.comb += pll.reset.eq(platform.request("cpu_reset") | self.rst)
         pll.register_clkin(platform.request("clk200"), 200e6)
         pll.create_clkout(self.cd_sys,    sys_clk_freq)
