@@ -99,7 +99,7 @@ _io = [
             "AH5 AH6 AJ2 AH2 AH4 AJ4 AK1 AJ1",
             "AF1 AF2 AE4 AE3 AF3 AF5 AE1 AE5",
             "AC1 AD3 AC4 AC5 AE6 AD6 AC2 AD4"),
-            IOStandard("SSTL15_T_DCI")),
+            IOStandard("SSTL15")),
         Subsignal("dqs_p",   Pins("AC16 Y19 AJ18 AH16 AH7 AG2 AG4 AD2"),
             IOStandard("DIFF_SSTL15")),
         Subsignal("dqs_n",   Pins("AC15 Y18 AK18 AJ16 AJ7 AH1 AG3 AD1"),
